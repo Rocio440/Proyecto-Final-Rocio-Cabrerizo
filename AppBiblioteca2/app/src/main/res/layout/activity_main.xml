@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:background="@color/azulito"
+            android:padding="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true">
+
+            <!-- Cabecera de la tabla -->
+            <TableRow
+                android:background="#0077b6"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="LIBROS"
+                    android:textColor="@color/white"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="@drawable/borde_celda" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="EJEMPLARES"
+                    android:textColor="@color/white"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:background="@drawable/borde_celda" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>

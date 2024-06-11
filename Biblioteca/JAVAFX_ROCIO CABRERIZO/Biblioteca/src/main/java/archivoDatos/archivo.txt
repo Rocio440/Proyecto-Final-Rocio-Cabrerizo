@@ -1,0 +1,3 @@
+jdbc:mysql://localhost:3308/secretaria
+admin
+DAATJmc3pXmw

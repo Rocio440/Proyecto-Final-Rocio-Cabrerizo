@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="041a43d8-6da1-48a2-a584-2f0ac91b8925">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM libros;]]>
+	</queryString>
+	<field name="isbn" class="java.math.BigInteger">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="titulo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fechapublicacion" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="autor" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tipo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="genero" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idioma" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descripcion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ejemplares" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="32" uuid="7de05f4a-c8fd-4ed7-ab1e-71a4b591b425"/>
+				<textElement textAlignment="Center">
+					<font fontName="Britannic Bold" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Informe Libros Existentes  ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="16" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="22" backcolor="#EAC393" uuid="3d38eff3-406c-45e8-a423-bc1159457cf9"/>
+				<box>
+					<pen lineWidth="1.0" lineColor="#3399FF"/>
+					<topPen lineWidth="1.0" lineColor="#3399FF"/>
+					<leftPen lineWidth="1.0" lineColor="#3399FF"/>
+					<bottomPen lineWidth="1.0" lineColor="#3399FF"/>
+					<rightPen lineWidth="1.0" lineColor="#3399FF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TITULO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="133" y="2" width="52" height="20" backcolor="#EAC393" uuid="a61c5924-b517-4c90-b2e0-f557f834f9cd"/>
+				<box>
+					<pen lineWidth="1.0" lineColor="#3399FF"/>
+					<topPen lineWidth="1.0" lineColor="#3399FF"/>
+					<leftPen lineWidth="1.0" lineColor="#3399FF"/>
+					<bottomPen lineWidth="1.0" lineColor="#3399FF"/>
+					<rightPen lineWidth="1.0" lineColor="#3399FF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[GENERO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="212" y="2" width="54" height="20" backcolor="#EAC393" uuid="8e874dcd-0be3-4637-93cb-f4f3d822b99c"/>
+				<box>
+					<pen lineWidth="1.0" lineColor="#3399FF"/>
+					<topPen lineWidth="1.0" lineColor="#3399FF"/>
+					<leftPen lineWidth="1.0" lineColor="#3399FF"/>
+					<bottomPen lineWidth="1.0" lineColor="#3399FF"/>
+					<rightPen lineWidth="1.0" lineColor="#3399FF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[IDIOMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="0" width="150" height="22" backcolor="#EAC393" uuid="b5ff689d-52f3-40e4-874d-0ab481bddee0"/>
+				<box>
+					<pen lineWidth="1.0" lineColor="#3399FF"/>
+					<topPen lineWidth="1.0" lineColor="#3399FF"/>
+					<leftPen lineWidth="1.0" lineColor="#3399FF"/>
+					<bottomPen lineWidth="1.0" lineColor="#3399FF"/>
+					<rightPen lineWidth="1.0" lineColor="#3399FF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DESCRIPCION ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="0" width="85" height="22" backcolor="#EAC393" uuid="de9b82e3-dc1a-4d2f-bb42-eced7d41b3a8"/>
+				<box>
+					<pen lineWidth="1.0" lineColor="#3399FF"/>
+					<topPen lineWidth="1.0" lineColor="#3399FF"/>
+					<leftPen lineWidth="1.0" lineColor="#3399FF"/>
+					<bottomPen lineWidth="1.0" lineColor="#3399FF"/>
+					<rightPen lineWidth="1.0" lineColor="#3399FF"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[EJEMPLARES]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" backcolor="#D3E8FD" uuid="5d722d11-7ff2-4520-a8f7-da6c4cb74172"/>
+				<textFieldExpression><![CDATA[$F{titulo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="0" width="150" height="30" backcolor="#D3E8FD" uuid="49231a07-66ea-42f4-bed0-2e9233fd4097"/>
+				<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="0" width="82" height="20" backcolor="#D3E8FD" uuid="aa48681d-c2af-4da0-b413-9832ff679072"/>
+				<textFieldExpression><![CDATA[$F{ejemplares}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="133" y="0" width="52" height="20" backcolor="#D3E8FD" uuid="e9828f00-e6c7-42aa-a3f8-86a65d74637e"/>
+				<textFieldExpression><![CDATA[$F{genero}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="212" y="0" width="54" height="20" backcolor="#D3E8FD" uuid="765a77ee-6c8c-43bf-b073-e98f9652e42c"/>
+				<textFieldExpression><![CDATA[$F{idioma}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

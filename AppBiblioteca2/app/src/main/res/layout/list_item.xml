@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvIsbn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ISBN"/>
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Titulo"/>
+
+    <TextView
+        android:id="@+id/tvAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Autor"/>
+
+    <TextView
+        android:id="@+id/tvEjemplares"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejemplares"/>
+</LinearLayout>

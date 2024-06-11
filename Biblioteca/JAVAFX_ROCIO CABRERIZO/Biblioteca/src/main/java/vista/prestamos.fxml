@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="paneprincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="858.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorPrestar">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="404.0" layoutY="22.0" prefHeight="64.0" prefWidth="429.0" text="Préstamos" textAlignment="CENTER" textFill="#1976d2">
+         <font>
+            <Font name="Dubai Regular" size="36.0" />
+         </font>
+      </Label>
+      <HBox layoutX="65.0" layoutY="74.0" prefHeight="392.0" prefWidth="771.0">
+         <children>
+            <ImageView fitHeight="389.0" fitWidth="307.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/Hands%20-%20Show.png" />
+               </image>
+            </ImageView>
+            <Separator orientation="VERTICAL" prefHeight="469.0" prefWidth="25.0">
+               <HBox.margin>
+                  <Insets bottom="50.0" left="70.0" top="50.0" />
+               </HBox.margin>
+            </Separator>
+            <VBox prefHeight="392.0" prefWidth="385.0">
+               <children>
+                  <Label text="Usuario">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="5.0" top="20.0" />
+                     </padding>
+                  </Label>
+                  <ComboBox fx:id="txtusuario" prefHeight="37.0" prefWidth="305.0" />
+                  <Label text="Código Libro">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="5.0" top="20.0" />
+                     </padding>
+                  </Label>
+                  <ComboBox fx:id="txtcodigo" prefHeight="37.0" prefWidth="305.0" />
+                  <Button mnemonicParsing="false" onAction="#btnprestar" prefHeight="43.0" prefWidth="187.0" style="-fx-background-color: #1976D2;" text="Prestar" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="50.0" top="50.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="50.0" top="40.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</Pane>
